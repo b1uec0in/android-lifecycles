@@ -47,6 +47,11 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.android.lifecycles.step3_solution_data_binding.ChronoActivity3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.android.lifecycles.step4_solution.LocationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

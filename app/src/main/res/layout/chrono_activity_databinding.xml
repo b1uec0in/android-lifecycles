@@ -18,11 +18,11 @@
 
     <data>
 
-        <import type="android.databinding.ObservableField" />
+        <import type="com.example.android.lifecycles.step3_solution_data_binding.ObservableLiveData" />
 
         <variable
             name="elapsedTime"
-            type="ObservableField&lt;Long&gt;">
+            type="ObservableLiveData&lt;Long&gt;">
 
         </variable>
     </data>
@@ -52,7 +52,7 @@
             android:layout_below="@id/hello_textview"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@{String.format(@string/seconds, elapsedTime)}" />
+            android:text="@{String.format(@string/seconds, elapsedTime.value)}" />
 
     </RelativeLayout>
 

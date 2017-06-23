@@ -14,10 +14,8 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step3_solution;
+package com.example.android.lifecycles.step3_solution_data_binding;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.os.SystemClock;
 
@@ -31,7 +29,7 @@ public class LiveDataTimerViewModel extends ViewModel {
 
     private static final int ONE_SECOND = 1000;
 
-    private MutableLiveData<Long> mElapsedTime = new MutableLiveData<>();
+    private ObservableLiveData<Long> mElapsedTime = new ObservableLiveData<>();
 
     private long mInitialTime;
 
@@ -50,7 +48,7 @@ public class LiveDataTimerViewModel extends ViewModel {
 
     }
 
-    public LiveData<Long> getElapsedTime() {
+    public ObservableLiveData<Long> getElapsedTime() {
         return mElapsedTime;
     }
 }
